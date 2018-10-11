@@ -9,7 +9,7 @@ Let's say you are receiving a JavaScript object in your application and for usin
 
 ## Features
 
-- **[NEW] **Create rule out of an example object 
+- **[NEW]** Create rule out of an example object 
 - Verbose validation results
 - Great, advanced, easy to use and flexible configuration
 - Useful in any project
