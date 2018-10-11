@@ -131,13 +131,13 @@ module.exports = {
      */
     getTypeName: function (value) {
         let type = '';
-        Object.keys(this.typeChecker).forEach(
-            typeFunction => {
-                if (this.typeChecker[typeFunction](value)) {
-                    type = typeFunction.toLowerCase().substr(2);
-                }
+
+        Object.keys(this.typeChecker).forEach(typeFunction => {
+            if (this.typeChecker[typeFunction](value)) {
+                type = typeFunction.toLowerCase().substr(2);
             }
-        );
+        });
+
         return type;
     }
 };

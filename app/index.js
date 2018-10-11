@@ -116,5 +116,21 @@ module.exports = (function () {
         return RulesExample;
     };
 
+    JDV.prototype.makeRule = function (data) {
+        let rule = {
+            type: HelperFunctions.getTypeName(data)
+        };
+
+        if (rule.type === 'object') {
+            rule.props = {};
+
+            Object.keys(data).forEach(prop => {
+                rule.props[prop] = this.makeRule(data[prop]);
+            });
+        }
+
+        return rule;
+    };
+
     return JDV;
 }());

@@ -9,23 +9,12 @@ Let's say you are receiving a JavaScript object in your application and for usin
 
 ## Features
 
-- Verbose validation results **(NEW)**
+- **[NEW] **Create rule out of an example object 
+- Verbose validation results
 - Great, advanced, easy to use and flexible configuration
 - Useful in any project
 - Many useful functions
-- Supported data types:
-  - String
-  - Number
-  - Array
-  - Function
-  - Object
-  - Null
-  - Undefined
-  - Boolean
-  - RegExp
-  - Error
-  - Date
-  - Symbol
+- Supported data types: String, Number, Array, Function, Object, Null, Undefined, Boolean, RegExp, Error, Date, Symbol
 - User-friendly feedbacks
 - In case of invalid data user-friendly report
 
@@ -87,6 +76,29 @@ If you prefer single-use validation, you can do something like this:
 
 ```javascript
 jdv.validate(data, rule); // Returns true if data is valid
+```
+
+You can also create a rule out of an example object:
+
+```javascript
+jdv.makeRule({
+    'name': 'Tom',
+    'surname': 'Jerry',
+    'isActive': true
+});
+```
+
+Returns:
+
+```bash
+{
+	type: 'object',
+	props: {
+		name: { type: 'string' },
+     	surname: { type: 'string' },
+     	isActive: { type: 'boolean' }
+	}
+}
 ```
 
 ## How to Use
