@@ -1,6 +1,6 @@
 {
   "name": "@ibrokhim/jdv-nodejs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Advanced JSON Data Validator for NodeJS",
   "main": "app/index.js",
   "dependencies": {},
