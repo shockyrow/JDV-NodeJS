@@ -122,8 +122,7 @@ module.exports = {
         return 'is' + type.replace(/^\w/, function (chr) {
             return chr.toUpperCase();
         });
-    }
-    ,
+    },
 
     /**
      * returns the type name of the value
@@ -132,14 +131,13 @@ module.exports = {
      */
     getTypeName: function (value) {
         let type = '';
-        Object.keys(typeChecker).forEach(
+        Object.keys(this.typeChecker).forEach(
             typeFunction => {
-                if (typeChecker[typeFunction](value)) {
+                if (this.typeChecker[typeFunction](value)) {
                     type = typeFunction.toLowerCase().substr(2);
                 }
             }
         );
         return type;
     }
-}
-;
+};
