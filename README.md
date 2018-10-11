@@ -92,12 +92,12 @@ Returns:
 
 ```bash
 {
-	type: 'object',
-	props: {
-		name: { type: 'string' },
-     	surname: { type: 'string' },
-     	isActive: { type: 'boolean' }
-	}
+    type: 'object',
+    props: {
+        name: { type: 'string' },
+        surname: { type: 'string' },
+        isActive: { type: 'boolean' }
+    }
 }
 ```
 
