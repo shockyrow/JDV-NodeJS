@@ -3,10 +3,6 @@ Advanced JSON Data Validator for NodeJS. [https://iiiniii.github.io/JDV-NodeJS](
 
 [![Build Status](https://travis-ci.org/IIINIII/JDV-NodeJS.svg?branch=master)](https://travis-ci.org/IIINIII/JDV-NodeJS)
 
--------------------------------
-
-[TOC]
-
 ## About
 
 Let's say you are receiving a JavaScript object in your application and for using the data without a problem you have to use something like  `if(data != null)`  or  `if(data != undefined)`  each time you want to access the data's value. I know it is so annoying. Well not anymore. Using this package you can now easily create rules for the data you receive and validate it. It is like a dream, I know but, not anymore.
