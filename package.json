@@ -1,0 +1,33 @@
+{
+  "name": "@ibrokhim/jdv-nodejs",
+  "version": "0.0.1",
+  "description": "Advanced JSON Data Validator for NodeJS",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIINIII/JDV-NodeJS.git"
+  },
+  "keywords": [
+    "advanced",
+    "json",
+    "data",
+    "validator",
+    "nodejs",
+    "jdv",
+    "jdv-nodejs",
+    "javascript"
+  ],
+  "author": "Ibrokhim Shokirov",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IIINIII/JDV-NodeJS/issues"
+  },
+  "homepage": "https://iiiniii.github.io/JDV-NodeJS"
+}
