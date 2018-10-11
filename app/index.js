@@ -1,17 +1,14 @@
 const HelperFunctions = require('./HelperFunctions');
+const RulesExample = require('./RulesExample');
 
-/**
- * JDV class
- * @type {JDV}
- */
 module.exports = (function () {
     /**
      * returns an instance of JDV
      * @param {Object} rules
-     * @param {boolean} verbose
+     * @param {boolean} is_verbose
      * @constructor
      */
-    function JDV(rules = null, verbose = false) {
+    function JDV(rules = null, is_verbose = false) {
         /**
          * rules getter
          * @returns {Object}
@@ -113,6 +110,10 @@ module.exports = (function () {
         } catch (e) {
             return false;
         }
+    };
+
+    JDV.prototype.rulesExample = function () {
+        return RulesExample;
     };
 
     return JDV;
