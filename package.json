@@ -2,7 +2,7 @@
   "name": "@ibrokhim/jdv-nodejs",
   "version": "0.0.1",
   "description": "Advanced JSON Data Validator for NodeJS",
-  "main": "index.js",
+  "main": "app/index.js",
   "dependencies": {},
   "devDependencies": {
     "mocha": "^5.2.0"
